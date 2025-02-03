@@ -237,7 +237,7 @@ section{
         }
         .watch button{
             display:inline-block;
-            padding:1rem;
+            padding:0.5rem;
             border-radius:4rem;
             font-size:1.3rem;
             color:white;

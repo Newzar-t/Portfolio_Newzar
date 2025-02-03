@@ -36,3 +36,11 @@ function DisplayNav(){
     let x = document.querySelector("nav") ;
     x.style.width = "380px" ;
 }
+
+document.getElementById("telechargercv").addEventListener("click", function () {
+    const pdfUrl = "CV_Rafelana_Anaelle.pdf"; 
+    const a = document.createElement("a");
+    a.href = pdfUrl;
+    a.download = pdfUrl ;
+    a.click();
+  });
