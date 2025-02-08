@@ -7,10 +7,9 @@ function updateWord() {
     wordIndex = (wordIndex + 1) % words.length;
 }
 
-// Change word every 2 seconds
 setInterval(updateWord, 2000);
 
-// Initialize with the first word
+
 updateWord();
 
 function ShowPhone(){
@@ -38,7 +37,7 @@ function DisplayNav(){
 }
 
 document.getElementById("telechargercv").addEventListener("click", function () {
-    const pdfUrl = "CV_Rafelana_Anaelle.pdf"; 
+    const pdfUrl = "CV_Rafelana_Anaelle_Alternance.pdf"; 
     const a = document.createElement("a");
     a.href = pdfUrl;
     a.download = pdfUrl ;
