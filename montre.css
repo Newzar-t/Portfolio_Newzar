@@ -173,6 +173,7 @@ section{
     .watch-text img{
         width:30%;
         height: fit-content;
+        object-fit: contain;
     }
 
     @media (max-width:1000px){
