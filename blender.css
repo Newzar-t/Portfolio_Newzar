@@ -1,124 +1,231 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+    font-family:'Poppins', sans-serif;
 }
 
-html {
-    font-size: 62.5%;
+html{
     scroll-behavior: smooth;
 }
 
-body {
-    width: 100%;
-    min-height: 100%;
-    background: linear-gradient(29deg, rgba(0, 0, 0, 1) 0%, rgba(0, 31, 37, 1) 46%, rgba(0, 68, 59, 1) 68%, rgba(252, 176, 69, 1) 100%);
-    color: white;
+body{
+    width:100%;
+    min-height:100%;
+    background: rgb(0,0,0);
+background: linear-gradient(29deg, rgba(0,0,0,1) 0%, rgba(0,31,37,1) 46%, rgba(0,68,59,1) 68%, rgba(252,176,69,1) 100%);
+color:white;
 }
 
-header {
-    margin-top: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem 9%;
-    background-color: transparent;
-    z-index: 100;
+span{
+    color: rgb(236, 201, 86);
+ }
+
+ .changing-color{
+     color:rgb(255, 250, 184);
+ }
+
+header{
+    margin-top:20px;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:1rem 9%;
+    background-color:transparent;
+    filter:drop-shadow(10px);
+    display:flex;
+    align-items: center;
+    z-index:100;
 }
 
-section {
-    min-height: 100vh;
-    padding: 5rem 9%;
+nav{
+    width:65px;
+    height:65px;
+    padding:7px 5px 8px 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition:all .5s ease;
+    cursor:pointer;
+    border-radius:33px;
+    border:3px solid rgb(236, 201, 86);
+    background-color: rgba(0, 0, 0, 0.185) ;
 }
 
-.blender {
-    position: relative;
-    margin-top: 10rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    font-size: 1.8rem;
+nav:hover{
+    background-color:rgb(236, 201, 86) ;
+    box-shadow:0 0 25px rgb(236, 201, 86);
+    
 }
 
-h1 {
-    font-size: 5rem;
-    font-weight: 700;
-    line-height: 1.3;
+nav a{
+    display:inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+    transition:0.3s ease;
 }
 
-.blender h2 {
-    font-size: 2rem;
-    margin-top: 5rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
+nav a:hover{
+    transform:scale(1.1) translateY(-2px);
 }
 
-video {
-    margin-top: 8rem;
-    margin-bottom: 4rem;
-    width: 80%;
-}
-
-p {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-}
-
-.blender-grid {
-    margin-top: 8rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
-}
-
-.blender-grid img {
-    width: 100%;
-    height: auto;
-    max-height: 35rem;
-    object-fit: cover;
-    border-radius: 1rem;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 1000px) {
-    .blender h1 {
-        font-size: 4rem;
+section{
+    min-height:100vh;
+    padding:5rem 13% 5rem;
     }
 
-    video {
-        margin-top: 5rem;
+    .blender{
+        position: relative;
+        margin-top: 10rem;
         width: 100%;
-    }
-}
-
-@media (max-width: 600px) {
-    .blender h1 {
-        font-size: 3rem;
-    }
-
-    .blender h2 {
-        font-size: 1.8rem;
-        margin-top: 5rem;
-    }
-
-    video {
-        margin-top: 3rem;
-    }
-
-    .blender-grid {
         display: flex;
         flex-wrap: wrap;
-        gap: 1rem;
+        
+    }
+    
+    .blender h1{
+        font-size:5rem;
+           font-weight:700;
+           line-height:1.3;
+    }
+    
+    .blender h2{
+        font-size:2rem;
+        margin-top: 5rem ;
+            margin-bottom:1rem;
+            font-weight:700;
     }
 
-    .blender-grid img {
+    .blender video{
+        margin-top: 8rem;
+        margin-bottom: 4rem;
         width: 100%;
     }
-}
 
+    .blender p{
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .blender-grid{
+        margin-top: 8rem;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: repeat(3,45rem) ;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        grid-auto-flow:row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blender-grid img{
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+    }
+
+    #img1{
+        grid-column: 1/3;
+    }
+    #img2{
+        grid-column:2/4;
+    }
+
+    @media (max-width:1200px){
+        section{
+            min-height:100vh;
+            padding:2rem 8% 2rem;
+            }
+
+        .blender h1{
+            font-size:3.5rem;
+               font-weight:700;
+               line-height:1.3;
+        }
+        
+        .blender h2{
+            font-size:1.8rem;
+            margin-top: 5rem ;
+                font-weight:700;
+        }
+    
+        .blender-grid{
+            position: relative;
+            margin-top: 5rem;
+            grid-template-rows: repeat(3,25rem) ;
+        }
+
+        .blender video{
+            margin-top: 5rem;
+            margin-bottom: 2.5rem;
+            width: 100%;
+        }
+
+        .blender p{
+            font-size:1.3rem;
+        }
+    
+    }
+    
+    @media (max-width:600px){
+
+        section{
+            min-height:100vh;
+            padding:1rem 8% 1rem;
+            }
+    
+        .blender h1{
+            font-size:3rem;
+               font-weight:700;
+               line-height:1.3;
+        }
+        
+        .blender h2{
+            font-size:1.8rem;
+            margin-top: 3rem ;
+                font-weight:700;
+        }
+    
+        .blender-grid{
+            position: relative;
+            margin-top: 5rem;
+            display: flex;
+            flex-wrap: wrap;
+            height:100%;
+        }
+
+        .blender-grid img{
+            width:100%;
+            max-height:25rem;
+            object-fit: cover;
+        }
+    
+        .blender-text{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+            gap:1.8rem;
+        }
+        
+        .blender-text p{
+            font-size: 1.2rem;
+        }
+
+        .blender video{
+            margin-top: 3rem;
+            margin-bottom:0rem;
+            width: 100%;
+        }
+        
+    
+    }
