@@ -144,7 +144,7 @@ section{
     }
 
     #watch-img img{
-        width:70%;
+        width:40%;
         max-width:50rem;
         height:fit-content;
         object-fit: contain;
@@ -217,7 +217,7 @@ section{
         }
     
         .watch-text img{
-            margin-top: 5rem;;
+            margin-top: 5rem;
             width:50%;
             height: fit-content;
         }
