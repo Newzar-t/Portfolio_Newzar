@@ -176,7 +176,12 @@ section{
         object-fit: contain;
     }
 
-    @media (max-width:1000px){
+    @media (max-width:1200px){
+
+        .watch{
+            margin-top: 7rem;
+      
+        }
 
         .watch h1{
             font-size:4rem;
@@ -200,7 +205,7 @@ section{
         }
     
         .watch-text p{
-            font-size:1.8rem;
+            font-size:1.4rem;
             margin-bottom: 1.8rem;
         }
         .watch-text{
@@ -220,27 +225,31 @@ section{
     }
     
     @media (max-width:600px){
+
+        .watch{
+            margin-top: 5rem;
+        }
     
         .watch h1{
-            font-size:3rem;
+            font-size:2.5rem;
                font-weight:700;
                line-height:1.3;
         }
         
         .watch h2{
-            font-size:1.8rem;
-            margin-top: 0rem ;
+            font-size:1.4rem;
+            margin-top: 2rem ;
                 font-weight:700;
         }
         .watch p{
-            font-size: 1.5rem;
+            font-size: 1.1rem;
             margin-bottom: 2rem;
         }
         .watch button{
             display:inline-block;
-            padding:0.5rem;
+            padding:0 0.8rem ;
             border-radius:4rem;
-            font-size:1.3rem;
+            font-size:1.1rem;
             color:white;
         }
     }

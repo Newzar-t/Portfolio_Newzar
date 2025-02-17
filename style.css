@@ -47,8 +47,8 @@ header{
 
 
 nav{
-    width:65px;
-    height:65px;
+    width:55px;
+    height:55px;
      padding-left: 4px;
     display:flex;
     justify-content: space-between;
@@ -297,6 +297,8 @@ section{
     display:flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
+    transition:0.3s ease;
 
 }
 
@@ -317,7 +319,14 @@ section{
     align-items: center;
     justify-content:space-between;
     margin-top: 1rem;
+    cursor:pointer;
+    transition:0.3s ease;
 }
+
+#blenderproject:hover, #pepestudioproject:hover, #mkfrproject:hover, #montreproject:hover, #unityproject:hover{
+    transform: scale(1.05);
+}
+
 
 
 #blenderproject img, #pepestudioproject img, #mkfrproject img, #montreproject img{
@@ -440,6 +449,7 @@ section{
     display:flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 
 }
 
@@ -455,17 +465,28 @@ section{
 }
 
 .apropos-card{
-    width:100%;
-    padding-top: 4rem;
+    width:70%;
+    height: fit-content;
+    padding-top: 5rem;
     height:fit-content;
     display:flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .apropos-card img{
-    width:60%;
+    width:100%;
 }
+
+#myCard{
+    transition: transform 0.2s ease-out;
+    transform: rotateX(calc(10deg * var(--dx, 0)))
+    rotateY(calc(10deg * var(--dy, 0)));
+    box-shadow: 10px 10px 25px rgb(0,0,0),0.5;
+}
+
+
 
 
 .contact{
@@ -685,6 +706,19 @@ section{
 .apropos-content h3{
     font-size:1.8rem;
 }
+
+.apropos-card{
+    width:100%;
+    height: fit-content;
+    padding-top: 3.5rem;
+}
+
+.apropos-card img{
+    width:100%;
+    border-radius: 1rem;
+}
+
+
 
 
 .contact-content{
