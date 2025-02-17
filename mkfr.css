@@ -94,7 +94,7 @@ section{
     }
     
     .mkfr h1{
-        font-size:5rem;
+        font-size:4rem;
            font-weight:700;
            line-height:1.3;
     }
@@ -127,7 +127,7 @@ section{
     }
 
     .mkfr-content p{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         margin-bottom: 0.5rem;
     }
 
@@ -170,7 +170,7 @@ section{
             }
 
         .mkfr h1{
-            font-size:3.2rem;
+            font-size:3rem;
                font-weight:700;
                line-height:1.3;
         }
@@ -212,19 +212,19 @@ section{
             }
     
         .mkfr h1{
-            font-size:3rem;
+            font-size:2.5rem;
                font-weight:700;
                line-height:1.3;
         }
         
         .mkfr h2{
-            font-size:1.8rem;
+            font-size:1.5rem;
             margin-top: 5rem ;
                 font-weight:700;
         }
 
         .mkfr p{
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
 
         .mkfr-grid{
