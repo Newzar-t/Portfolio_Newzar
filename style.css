@@ -50,6 +50,7 @@ nav{
     width:55px;
     height:55px;
      padding-left: 4px;
+    padding-right:4px;
     display:flex;
     justify-content: space-between;
     align-items: center;
