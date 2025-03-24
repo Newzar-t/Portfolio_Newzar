@@ -18,8 +18,8 @@ html{
 body{
     width:100%;
     min-height:100%;
-    background: rgb(0,0,0);
-background: linear-gradient(29deg, rgba(0,0,0,1) 0%, rgba(0,31,37,1) 46%, rgba(0,68,59,1) 68%, rgba(252,176,69,1) 100%);
+    background: rgb(2,17,9);
+background: linear-gradient(0deg, rgba(2,17,9,1) 0%, rgba(10,54,43,1) 100%);
 color:white;
 }
 
@@ -79,7 +79,8 @@ nav a:hover{
 
 section{
     min-height:100vh;
-    padding:5rem 13% 5rem;
+    max-width:100ch;
+    margin:auto;
     }
 
     .mkfr{
@@ -166,8 +167,8 @@ section{
     @media (max-width:1200px){
 
         section{
-            min-height:100vh;
-            padding:2rem 8% 2rem;
+            margin:auto;
+            width:85%;
             }
 
         .mkfr h1{
@@ -208,8 +209,8 @@ section{
     @media (max-width:600px){
 
         section{
-            min-height:100vh;
-            padding:1rem 8% 1rem;
+            margin:auto;
+            width:85%;
             }
     
         .mkfr h1{
@@ -255,7 +256,7 @@ section{
         #emotesmkfr img{
             object-fit: contain;
             width: 100%;;
-            width:30rem;
+    
         }
     }
     

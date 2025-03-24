@@ -79,7 +79,8 @@ nav a:hover{
 
 section{
     min-height:100vh;
-    padding:5rem 9% 5rem;
+    max-width:100ch;
+    margin:auto;
     }
 
     .watch{
@@ -137,9 +138,11 @@ section{
     }
 
     #watch-img{
-        width:100%;
+        width:80%;
+        margin: auto;
         display:flex;
         justify-content: center;
+        align-items: center;
         min-height:auto;
     }
 
@@ -178,6 +181,10 @@ section{
     }
 
     @media (max-width:1200px){
+        section{
+            max-width: 85%;
+            margin:auto;
+        }
 
         .watch{
             margin-top: 7rem;

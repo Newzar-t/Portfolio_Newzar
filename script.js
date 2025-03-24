@@ -43,7 +43,7 @@ function DisplayNav(){
 }
 
 document.getElementById("telechargercv").addEventListener("click", function () {
-    const pdfUrl = "CV_Rafelana_Anaelle_Alternance.pdf"; 
+    const pdfUrl = "CV_RafelanaAnaelle.pdf"; 
     const a = document.createElement("a");
     a.href = pdfUrl;
     a.download = pdfUrl ;

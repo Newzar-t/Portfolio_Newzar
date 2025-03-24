@@ -18,9 +18,8 @@ html{
 body{
     width:100%;
     height:100%;
-    background: rgb(0,0,0);
-background: linear-gradient(29deg, rgba(0,0,0,1) 0%, rgba(0,31,37,1) 46%, rgba(0,68,59,1) 68%, rgba(252,176,69,1) 100%);
-    
+    background: rgb(2,17,9);
+background: linear-gradient(0deg, rgba(2,17,9,1) 0%, rgba(10,54,43,1) 100%);
 color:rgb(255, 255, 255);
 }
 
@@ -86,14 +85,17 @@ nav a:hover{
 
 section{
     min-height:100vh;
-    padding:5rem 12% 5rem;
+    max-width:100ch;
+    margin:0 auto;
     }
 
     .accueil{
+        width:100vw;
+        height:100vh;
         margin-top: 5rem;
         display:flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         gap:5%;
         align-items: center;
         
@@ -103,7 +105,7 @@ section{
     }
 
     .accueil h1{
-       font-size:4rem;
+       font-size:3.5rem;
        font-weight:700;
        line-height:1.2;
        margin-bottom: 2rem;
@@ -123,13 +125,12 @@ section{
         font-weight:700;
     }
     .accueil-img{
-        width:40%;
+        width:30%;
     }
 
     .accueil-img img{
         position:relative;
-        width:100%;
-        min-width:30rem;
+        max-width:25rem;
         border-radius:50%;
 
     }
@@ -250,9 +251,9 @@ section{
     display:grid;
     grid-auto-flow: row;
     grid-template-columns:55% 40% ;
-    grid-column-gap:5%;
-    grid-template-rows: repeat(3,48rem);
-    grid-row-gap: 1.5rem;
+    grid-column-gap:7%;
+    grid-template-rows: repeat(5,fit-content);
+    grid-row-gap: 3rem;
 
 }
 
@@ -293,12 +294,12 @@ section{
 }
 
 #unityproject{
-    grid-column: 1;
-    grid-row: 1/3;
+
     background-color:transparent;
     display:flex;
     flex-direction: column;
     align-items: center;
+    justify-content:stretch;
     cursor: pointer;
     transition:0.3s ease;
 
@@ -309,33 +310,57 @@ section{
     height:68%;
     object-fit: cover;
     border-radius:80px;
+    background-color:transparent;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition:0.3s ease;
 
+}
+
+#cardgameproject
+{
+    background-color:transparent;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:stretch;
+    cursor: pointer;
+    transition:0.3s ease;
 }
 
 
 
-#blenderproject, #pepestudioproject, #mkfrproject, #montreproject{
+#blenderproject, #pepestudioproject, #mkfrproject, #montreproject, #spaceshipproject, #pochetteproject{
     width:100%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:space-between;
+    justify-content:stretch;
     margin-top: 1rem;
     cursor:pointer;
     transition:0.3s ease;
 }
 
-#blenderproject:hover, #pepestudioproject:hover, #mkfrproject:hover, #montreproject:hover, #unityproject:hover{
+#blenderproject:hover, #pepestudioproject:hover, #mkfrproject:hover, #montreproject:hover, #unityproject:hover, #spaceshipproject:hover, #cardgameproject:hover, #pochetteproject:hover{
     transform: scale(1.05);
 }
 
 
 
-#blenderproject img, #pepestudioproject img, #mkfrproject img, #montreproject img{
+#blenderproject img, #pepestudioproject img, #mkfrproject img, #spaceshipproject img, #cardgameproject img, #pochetteproject img{
     width: 100%;
     height: 70%;
     border-radius: 60px;
     object-fit: cover;
+}
+
+#montreproject img{
+    width:100%;
+    max-height:37rem;
+    object-fit:cover;
 }
 
 
@@ -584,7 +609,10 @@ section{
         display:none;
     } 
     .accueil{
-        width:100%;
+        width:80%;
+        min-height:100vh;
+        margin:auto;
+        margin-bottom: 10rem;;
         gap:2rem;
         display:block;
         justify-content:center;
@@ -622,12 +650,14 @@ section{
 
     #projectgrid{
         margin-top:7rem;
-        width:100%;
+        max-width: 100vw;
         display:grid;
-        grid-template-columns:50% 50% ;
+        justify-content: center;
+        grid-template-columns:45% 45% ;
         grid-column-gap:1.3rem;
         grid-template-rows: repeat(3,auto);
         grid-row-gap: 1rem;
+        margin-bottom: 8rem;
     
     }
 
@@ -658,6 +688,8 @@ section{
 }
 
 .actu-content{
+    width:90%;
+    margin: auto;
     display: block;
     justify-content: center;
     margin-top: 5rem;
@@ -708,9 +740,12 @@ section{
 .apropos-content h3{
     font-size:1.8rem;
 }
+.apropos{
+    width:90%;
+}
 
 .apropos-card{
-    width:100%;
+    width:80%;
     height: fit-content;
     padding-top: 3.5rem;
 }
@@ -777,13 +812,14 @@ section{
 
     section{
         min-height:100vh;
-        padding:5rem 5% 5rem;
+        width:100%;
+        padding:0 2rem 0 2rem;
         }
 
 
     .accueil{
-        gap:2rem;
-        width:100%;
+        width:90%;
+        margin-bottom: 10rem;
     }
 
    

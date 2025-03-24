@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family:'Poppins', sans-serif;
+}
+
+html{
+    font-size:16px;
+    scroll-behavior: smooth;
+}
+
+body{
+    width:100%;
+    min-height:100%;
+    background: rgb(2,17,9);
+background: linear-gradient(0deg, rgba(2,17,9,1) 0%, rgba(10,54,43,1) 100%);
+color:white;
+}
+
+span{
+    color: rgb(236, 201, 86);
+ }
+
+ .changing-color{
+     color:rgb(255, 250, 184);
+ }
+
+header{
+    margin-top:20px;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:1rem 9%;
+    background-color:transparent;
+    filter:drop-shadow(10px);
+    display:flex;
+    align-items: center;
+    z-index:100;
+}
+
+nav{
+    width:55px;
+    height:55px;
+    padding:7px 5px 8px 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition:all .5s ease;
+    cursor:pointer;
+    border-radius:33px;
+    border:3px solid rgb(236, 201, 86);
+    background-color: rgba(0, 0, 0, 0.185) ;
+}
+
+nav:hover{
+    background-color:rgb(236, 201, 86) ;
+    box-shadow:0 0 25px rgb(236, 201, 86);
+    
+}
+
+nav a{
+    display:inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+    transition:0.3s ease;
+}
+
+nav a:hover{
+    transform:scale(1.1) translateY(-2px);
+}
+
+section{
+    min-height:100vh;
+    max-width:100ch;
+    margin:auto;
+    }
+
+    .pochette{
+        position: relative;
+        margin-top: 10rem;
+    }
+    
+    .pochette h1{
+        font-size:3.5rem;
+           font-weight:700;
+           line-height:1.3;
+    }
+    
+    .pochette h2{
+        font-size:1.7rem;
+        margin-top: 5rem ;
+            margin-bottom:1rem;
+            font-weight:700;
+    }
+
+    .pochette p{
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+
+    @media (max-width:1200px){
+        section{
+            min-height:100vh;
+            width:85%;
+            margin:auto;
+            }
+    
+    
+        .pochette h1{
+            font-size:2.5rem;
+               font-weight:700;
+               line-height:1.3;
+        }
+        
+        .pochette h2{
+            font-size:1.5rem;
+            margin-top: 3rem ;
+                font-weight:700;
+        }
+    
+        .pochette p{
+            font-size: 1.2rem;
+        }
+    
+    
+    }
+    
+    @media (max-width:600px){
+
+    
+    
+        .pochette h1{
+            font-size:2.2rem;
+               font-weight:700;
+               line-height:1.3;
+        }
+        
+        .pochette h2{
+            font-size:1.4rem;
+            margin-top: 2rem ;
+                font-weight:700;
+        }
+        .pochette p{
+            font-size: 1rem;
+            margin-bottom: 0.1rem;
+        }
+    
+    
+    }
